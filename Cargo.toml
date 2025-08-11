@@ -1,0 +1,11 @@
+[package]
+name = "quote-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serenity = { version = "0.12", default-features = false, features = ["client", "gateway", "model", "rustls_backend"] }
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "mysql"] }
+tokio = { version = "1", features = ["full"] }
+dotenv = "0.15"
+rand = "0.8"
