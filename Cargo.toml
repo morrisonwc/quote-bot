@@ -1,6 +1,6 @@
 [package]
 name = "quote-bot"
-version = "0.1.0"
+version = "0.9.0"
 edition = "2021"
 
 [dependencies]
@@ -9,3 +9,5 @@ sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "mysql"] }
 tokio = { version = "1", features = ["full"] }
 dotenv = "0.15"
 rand = "0.8"
+regex = "1.9"
+lazy_static = "1.4"
